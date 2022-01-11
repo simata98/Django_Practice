@@ -8,3 +8,6 @@ def index(request):
   today = str(datetime.today().date())
   context = {"date":today}
   return render(request, 'foods/index.html', context=context)
+
+def chicken(request):
+  return render(request, 'foods/chicken.html')
