@@ -2,14 +2,15 @@
 {% load static %}
 
 {% block date-block %}
-  <div>12 Aug, 2020</div>
+  {% comment %} 템플릿 변수 {% endcomment %}
+  <div>{{date}}</div> 
 {% endblock date-block %}
 
 {% block food-container %}
   <div class="food">
     <img src={% static 'foods/images/chicken.jpg' %} width="300px" height="200px"/>
     <div class="info">
-      <h3>코딩에 빠진 닭</h3>
+      <h3>BBQ</h3>
       <P>주머니가 가벼운 당신의 마음까지 생각한 가격!</p>
       <a href="#">메뉴 보기</a>
     </div>
@@ -18,7 +19,7 @@
   <div class="food">
     <img src={% static 'foods/images/sushi.jpg' %} width="300px" height="200px"/>
     <div class="info">
-      <h3>코코스시</h3>
+      <h3>동현스시</h3>
       <P>주머니가 가벼운 당신의 마음까지 생각한 가격!</p>
       <a href="#">메뉴 보기</a>
     </div>
@@ -27,7 +28,7 @@
   <div class="food">
     <img src={% static 'foods/images/burger.jpg' %} width="300px" height="200px"/>
     <div class="info">
-      <h3>코데리아</h3>
+      <h3>ㅈ데리아</h3>
       <P>주머니가 가벼운 당신의 마음까지 생각한 가격!</p>
       <a href="#">메뉴 보기</a>
     </div>
@@ -36,7 +37,7 @@
   <div class="food">
     <img src={% static 'foods/images/bibimbap.jpg' %} width="300px" height="200px"/>
     <div class="info">
-      <h3>코가네</h3>
+      <h3>국뽕밥</h3>
       <P>주머니가 가벼운 당신의 마음까지 생각한 가격!</p>
       <a href="#">메뉴 보기</a>
     </div>
